@@ -1,0 +1,95 @@
+/*----------------General Styling-----------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.outer-form {
+    text-align: center;
+    border: 2px solid grey;
+    max-width: 500px;
+    height: 560px;
+    margin: 40px auto 0px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    background-color: #062d58;
+}
+
+/*----------------Calculator Header----------------*/
+#head-div {
+    background-color: #c7172c;
+    padding: 20px 30px 20px 30px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/*----------------Styles initial screen-------------*/
+#fence-label {
+    display: inline-block;
+    margin-top: 150px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+#fence {
+    margin: 20px 0px;
+    padding: 5px 45px;
+}
+
+#ok-btn {
+    padding: 5px 30px;
+}
+
+/*-----------------Styles 3ft Picket screen--------------*/
+#picket3 {
+    display: none;
+    color: white;
+}
+
+#label-description {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.arrange-input {
+    display: inline-block;
+}
+
+
+
+input {
+    margin: 10px;
+}
+
+#pickets {
+    width: 30px;
+    text-align: center;
+    padding: 2px 0px;
+}
+
+#back-btn {
+    padding: 5px 10px;
+    width: 100px;
+}
+
+#btn {
+    padding: 5px 10px;
+    width: 100px;
+}
+
+.form-label {
+    display: inline-block;
+}
+
+.form-padding {
+    margin: 15px 0px;
+}
