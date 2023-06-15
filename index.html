@@ -1,60 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <form>
-        <div class="calculator">
-            <div class="outer-form">
-                <div id="head-div">
-                    <h1>Fencing Calculator</h1>
-                </div>
+      <div class="calculator">
+        <div class="outer-form">
+          <div id="head-div">
+            <h1 id="main-header">Fencing Calculator</h1>
+          </div>
+          <!--initial screen for fence selection-->
+          <section id="fence-selector">
+            <label for="fence" id="fence-label"
+              >Please select the type of fence</label
+            ><br />
+            <select name="fence" id="fence">
+              <option value="3ft-picket" selected="selected">
+                3ft High Picket Fence
+              </option>
+              <option value="4ft-picket">4ft High Picket Fence</option>
+              <option value="6ft-picket">6ft High Picket Fence</option>
+            </select>
+            <br />
+            <input type="button" value="Ok" id="ok-btn" />
+          </section>
+          <!--3ft picket calculation screen-->
+          <section id="picket3">
+            <label
+              for="length"
+              id="label-description"
+              class="form-padding form-label"
+              >Fence Length (Meters)</label
+            ><br />
+            <input
+              type="number"
+              placeholder="Please enter the length"
+              name="length"
+              class="form-padding"
+              id="length"
+            /><br />
 
-                <section id="fence-selector">
-                    <label for="fence" id="fence-label">Please select the type of fence</label><br />
-                    <select name="fence" id="fence">
-                        <option value="3ft-picket" selected="selected">
-                            3ft High Picket Fence
-                        </option>
-                        <option value="4ft-picket">4ft High Picket Fence</option>
-                        <option value="6ft-picket">6ft High Picket Fence</option>
-                    </select>
-                    <br />
-                    <input type="button" onclick="fenceSelection()" value="Ok" id="ok-btn" />
-                </section>
+            <label for="pickets" class="form-padding arrange-input"
+              >Number of Pickets</label
+            >
+            <input
+              type="number"
+              class="arrange-input picket-out"
+              id="pickets"
+              size="1"
+              name="pickets"
+            /><br />
 
-                <section id="picket3">
-                    <label for="length" id="label-description" class="form-padding form-label">Fence Length
-                        (Meters)</label><br />
-                    <input type="number" placeholder="Please enter the length" name="length" class="form-padding"
-                        id="length" /><br />
+            <label for="rails" class="form-padding arrange-input"
+              >Number of Rails</label
+            >
+            <input
+              type="number"
+              class="arrange-input picket-out"
+              id="rails"
+              size="1"
+              name="rails"
+            />
 
-                    <label for="pickets" class="form-padding arrange-input">Number of Pickets</label>
-                    <input type="number" class="arrange-input picket-out" id="pickets" size="1" name="pickets" />
-
-                    <h3 class="form-padding">Number of Rails</h3>
-                    <p class="form-padding" id="rails">-</p>
-                    <h3 class="form-padding">Number of Posts</h3>
-                    <p class="form-padding" id="posts">-</p>
-                    <h3 class="form-padding">Bags of Postcrete</h3>
-                    <p class="form-padding" id="postcrete">-</p>
-                    <input type="button" onclick="goBack()" value="Back" class="form-padding" id="back-btn" />
-                    <input type="button" onclick="Calculate()" value="calculate" class="form-padding" id="btn" />
-                </section>
-            </div>
+            <h3 class="form-padding">Number of Posts</h3>
+            <p class="form-padding" id="posts">-</p>
+            <h3 class="form-padding">Bags of Postcrete</h3>
+            <p class="form-padding" id="postcrete">-</p>
+            <input
+              type="button"
+              value="Back"
+              class="form-padding"
+              id="back-btn"
+            />
+            <input
+              type="button"
+              onclick="Calculate()"
+              value="calculate"
+              class="form-padding"
+              id="btn"
+            />
+          </section>
         </div>
+      </div>
     </form>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script type="text/javascript" src="app.js"></script>
-</body>
-
+  </body>
 </html>
