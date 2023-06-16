@@ -37,15 +37,21 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     color: white;
+    
 }
 
 #fence {
     margin: 20px 0px;
-    padding: 5px 45px;
+    padding: 5px 10px;
 }
 
 #ok-btn {
     padding: 5px 30px;
+}
+
+#length {
+    padding: 5px 20px;
+    width: 290px;
 }
 
 /*-----------------Styles 3ft Picket screen--------------*/
@@ -60,30 +66,50 @@ body {
     color: white;
 }
 
-.arrange-input {
+.outer-output {
+    width: 500px;
+    
+}
+
+.arrange-output {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sort-output {
     display: inline-block;
 }
 
+.sort-p {
+    margin: 25px 0px 0px 90px;
+    
+}
 
+.sort-span {
+    margin: 25px 90px 0px 0px;
+    width: 50px;
+    height: 20px;
+    background-color: white;
+    border-radius: 2px;
+    color: black;
+    padding: 2px 2px 0px 2px;
+    
+}
 
 input {
     margin: 10px;
 }
 
-.picket-out {
-    width: 30px;
-    text-align: center;
-    padding: 2px 0px;
-}
-
 #back-btn {
     padding: 5px 10px;
-    width: 100px;
+    width: 160px;
+    margin: 20px 10px 0px 10px;
 }
 
 #btn {
     padding: 5px 10px;
-    width: 100px;
+    width: 160px;
+    margin: 20px 10px 0px 10px;
 }
 
 .form-label {

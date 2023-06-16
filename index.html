@@ -25,7 +25,13 @@
                 3ft High Picket Fence
               </option>
               <option value="4ft-picket">4ft High Picket Fence</option>
-              <option value="6ft-picket">6ft High Picket Fence</option>
+              <option value="6ft-picket">
+                6ft High Picket Fence (4" Pickets)
+              </option>
+              <option value="6ft6-picket">
+                6ft High Picket Fence (6" Pickets)
+              </option>
+              <option value="featheredge">6ft High Featheredge Fence</option>
             </select>
             <br />
             <input type="button" value="Ok" id="ok-btn" />
@@ -45,33 +51,37 @@
               class="form-padding"
               id="length"
             /><br />
+            <div class="outer-output">
+              <div class="arrange-output">
+                <p class="sort-output sort-p" id="option1">
+                  Number of 3ft x 4" Pickets
+                </p>
+                <span class="sort-output sort-span" id="span1"></span>
+              </div>
+              <br />
+              <div class="arrange-output">
+                <p class="sort-output sort-p" id="option2">
+                  Number of 3.6m D Rails (2 rails)
+                </p>
+                <span class="sort-output sort-span" id="span2"></span>
+              </div>
+              <br />
+              <div class="arrange-output">
+                <p class="sort-output sort-p" id="option3">
+                  Number of 6ft x 4" x 4" Posts
+                </p>
+                <span class="sort-output sort-span" id="span3"></span>
+              </div>
+              <br />
+              <div class="arrange-output">
+                <p class="sort-output sort-p" id="option4">
+                  Bags of Postcrete (2 per hole)
+                </p>
+                <span class="sort-output sort-span" id="span4"></span>
+              </div>
+              <br />
+            </div>
 
-            <label for="pickets" class="form-padding arrange-input"
-              >Number of Pickets</label
-            >
-            <input
-              type="number"
-              class="arrange-input picket-out"
-              id="pickets"
-              size="1"
-              name="pickets"
-            /><br />
-
-            <label for="rails" class="form-padding arrange-input"
-              >Number of Rails</label
-            >
-            <input
-              type="number"
-              class="arrange-input picket-out"
-              id="rails"
-              size="1"
-              name="rails"
-            />
-
-            <h3 class="form-padding">Number of Posts</h3>
-            <p class="form-padding" id="posts">-</p>
-            <h3 class="form-padding">Bags of Postcrete</h3>
-            <p class="form-padding" id="postcrete">-</p>
             <input
               type="button"
               value="Back"
